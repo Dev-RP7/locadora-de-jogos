@@ -29,7 +29,7 @@ public class JogosService {
 
         Jogos jogos = mapper.toEntity(dto);
         Jogos salvo = jogosRepository.save(jogos);
-        return mapper.toResponse(jogosRepository.save(salvo));
+        return mapper.toResponse(salvo);
     }
 
     @Transactional
